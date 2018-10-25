@@ -34,7 +34,7 @@ describe Bookmark do
     expect(bookmark).not_to be_a Bookmark
   end
   describe '.delete' do
-   it 'deletes the given bookmark' do
+   it 'deletes bookmarks from the list' do
      bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
 
      Bookmark.delete(id: bookmark.id)
