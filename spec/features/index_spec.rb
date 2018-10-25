@@ -1,5 +1,5 @@
 feature 'Index page' do
-  scenario 'Returns Hello World' do
+  scenario 'Returns Bookmark Manager' do
     visit '/'
     expect(page).to have_content "Bookmark Manager"
   end
