@@ -1,9 +1,7 @@
-require "sinatra/base"
+require 'sinatra/base'
 require 'sinatra/flash'
-require "./lib/bookmark"
-
-#require_relative './database_connection_setup'
-
+require './lib/bookmark'
+require './lib/database_connection'
 
 class BookmarkManager < Sinatra::Base
 enable :sessions, :method_override

@@ -1,5 +1,5 @@
 #require 'pg'
-require './lib/database_connection'
+require_relative 'database_connection'
 
 class Bookmark
 
@@ -21,6 +21,8 @@ class Bookmark
    result.map do |bookmark|
      Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
    end
+   # result = DatabaseConnection.query("SELECT * FROM bookmarks")
+   # result.map { |bookmark| bookmark['url'] }
  end
 
   def view
