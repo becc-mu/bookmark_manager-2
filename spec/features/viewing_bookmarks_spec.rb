@@ -21,12 +21,12 @@ feature 'Viewing bookmarks' do
     end
   end
 
-
-  scenario 'A user can add a bookmark to bookmark manager' do
-    visit '/bookmarks'
-    fill_in('url', with: 'http://testbookmark.com')
-    click_button('Submit')
-
-    expect(page).to have_content('http://testbookmark.com')
-  end
+  #
+  # scenario 'A user can add a bookmark to bookmark manager' do
+  #   visit '/bookmarks'
+  #   fill_in('url', with: 'http://testbookmark.com')
+  #   click_button('Submit')
+  #
+  #   expect(page).to have_content('http://testbookmark.com')
+  # end
 end
